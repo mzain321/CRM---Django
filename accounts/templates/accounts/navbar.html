@@ -1,0 +1,40 @@
+{% load static %}
+
+
+<style>
+  .msg{
+    font-size: 19px;
+    color: #fff;
+    margin-right: 20px;
+
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <img src="{% static 'images/logo.png' %} "height=60>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Dashboard <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'products' %}">Products</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'account' %}">Settings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="{% url 'zai' %}">Visit YOUTUBE Channel</a>
+      </li>
+    </ul>
+  </div>
+
+<span class="msg">{{request.user}}</span>
+<span><a class="btn btn-primary btn-sm " href="{% url 'logout' %}">LogOut</a></span>
+
+</nav>
+

@@ -1,0 +1,28 @@
+<style>
+#logo{
+
+}
+
+body{
+	background-color: white;
+}
+
+
+#total-orders{
+	background-color: red;
+}
+
+#orders-delivered{
+	background-color: yellow;
+}
+
+#orders-pending{
+	background-color: green;
+}
+
+
+
+.centered-navbar {position:absolute; left:25%; width:50%; text-align:center;}
+.c-navbar {position:absolute; left:60%;  width:40%; text-align:right;}
+.c-navbar2 {position:absolute; right:60%;  width:40%; text-align:left;}
+</style>
